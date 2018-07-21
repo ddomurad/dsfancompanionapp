@@ -1,4 +1,5 @@
-# dsfancompanionapp
+# DS Fan Companion App
+
 Simple fanmade companion application for Dungeon Saga board game. Powered by cordova and Onsen Ui 2.
 
 ![Screen 1](https://github.com/ddomurad/dsfancompanionapp/blob/master/screens/screen1.png)
