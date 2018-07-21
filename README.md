@@ -7,7 +7,7 @@ Simple fanmade companion application for Dungeon Saga board game. Powered by cor
 ![Screen 3](https://github.com/ddomurad/dsfancompanionapp/blob/master/screens/screen3.png)
 ![Screen 4](https://github.com/ddomurad/dsfancompanionapp/blob/master/screens/screen4.png)
 
-Release build:
+Andorid release build:
 
 ```
 > cordova prepare
