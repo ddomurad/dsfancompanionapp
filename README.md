@@ -9,8 +9,3 @@ Release build:
 > zipalign -v 4 ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk ./DS-Fan-Companion.apk
 ```
 
-Install on device:
-
-```
-> <ADB_PATH> install ./DS-Fan-Companion.apk
-```
