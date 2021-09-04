@@ -181,6 +181,10 @@ window.dd = {
             var spDef = dd.activeSegment.sp[i];
             var spDep = dd.depList[i];
 
+            if(spDef.trap == "!") {
+                continue;
+            }
+
             if ((spDef.trap == "X") ||
                 (dps.exit == "west" && (spDef.trap == "<" || spDef.trap == "\\" || spDef.trap == "-")) ||
                 (dps.exit == "north" && (spDef.trap == "^" || spDef.trap == "\\" || spDef.trap == "/")) ||

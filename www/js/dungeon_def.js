@@ -783,7 +783,421 @@ const dungeonDef = [
             { "id": 5, "large": false, "range": false, "trap": "" },
             { "id": 6, "large": false, "range": false, "trap": "" }
         ]
-    }
+    },
+    {
+        "exits": {
+            "east": [[8, 0]],
+            "north": [],
+            "west": [[0, 0]]
+        },
+        "id": "O1",
+        "large": true,
+        "map": "XXX   XXX XX1 2XX  XXX XXX  XXX XXX  XXX XXX  XXX XXX  XXX XXX  3X4X5X6  XXXXXXX  XXXXXXX  XXXXXXX  XXXXXXX   XXXXX    XXXXX    XXXXX  ",
+        "size": [9, 15],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "<" },
+            { "id": 2, "large": true, "range": true, "trap": ">" },
+            { "id": 3, "large": true, "range": true, "trap": "<" },
+            { "id": 4, "large": true, "range": true, "trap": "<" },
+            { "id": 5, "large": true, "range": true, "trap": ">" },
+            { "id": 6, "large": true, "range": true, "trap": ">" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[8, 0]],
+            "north": [],
+            "west": [[0, 0]]
+        },
+        "id": "O2",
+        "large": true,
+        "map": "#XX   XX# XX1 2XX  XXX XXX  XXX XXX  XXX XXX  XXX XXX  XXX XXX  3X4X5X6  #XXXXXX  XX#X##X  #X#XXXX  #XXXXX#   XXXXX    XXXXX    XXXXX  ",
+        "size": [9, 15],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "" },
+            { "id": 2, "large": true, "range": true, "trap": "" },
+            { "id": 3, "large": true, "range": true, "trap": "-" },
+            { "id": 4, "large": true, "range": true, "trap": "-" },
+            { "id": 5, "large": true, "range": true, "trap": "-" },
+            { "id": 6, "large": true, "range": true, "trap": "-" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[9, 3]],
+            "north": [[3, 0], [4, 0]],
+            "west": [[0, 8]]
+        },
+        "id": "O3",
+        "large": true,
+        "map": "   XX        XX        XX        1X2XXXX   XXXX      XXXX      XXXX3X    4XXXXX XXXXXXXXX     XXXXX     XXXXX     XXXX5  XX6XXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX  ",
+        "size": [10, 17],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "/" },
+            { "id": 2, "large": true, "range": true, "trap": "/" },
+            { "id": 3, "large": true, "range": true, "trap": "\\" },
+            { "id": 4, "large": true, "range": true, "trap": "X" },
+            { "id": 5, "large": true, "range": false, "trap": "" },
+            { "id": 6, "large": true, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[9, 3]],
+            "north": [[3, 0], [4, 0]],
+            "west": [[0, 8]]
+        },
+        "id": "O4",
+        "large": true,
+        "map": "   XX        XX        XX        1X2XXX#   XXXX      XXXX      XXXX3X    4XXXXX #XXXXXXXX     XXXXX     XXXXX     XXXX5  XX6XXXX   XXXXXXX   XXXXXXX   XXXXXXX   XXXXXXX  ",
+        "size": [10, 17],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "^" },
+            { "id": 2, "large": true, "range": true, "trap": ">" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": true, "range": true, "trap": "<" },
+            { "id": 5, "large": true, "range": false, "trap": "" },
+            { "id": 6, "large": true, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[11, 2]],
+            "north": [[3, 0], [4, 0], [7, 0], [8, 0]],
+            "west": [[0, 2]]
+        },
+        "id": "N1",
+        "large": true,
+        "map": "   XX  XX      XX  XX   XXXXX  XXXXX   1X  X2      XX34XX      XXXXXX      XXXXXX   ",
+        "size": [12, 7],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "\\" },
+            { "id": 2, "large": true, "range": true, "trap": "/" },
+            { "id": 3, "large": true, "range": false, "trap": "X" },
+            { "id": 4, "large": true, "range": false, "trap": "X" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[11, 2]],
+            "north": [[3, 0], [4, 0], [7, 0], [8, 0]],
+            "west": [[0, 2]]
+        },
+        "id": "N2",
+        "large": true,
+        "map": "   XX  XX      XX  XX   #XXXX  XXXX#   1X  X2      XX34XX      XXXXXX      XXXXXX   ",
+        "size": [12, 7],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "X" },
+            { "id": 2, "large": true, "range": true, "trap": "X" },
+            { "id": 3, "large": true, "range": false, "trap": "" },
+            { "id": 4, "large": true, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[7, 1]],
+            "north": [[3, 0], [4, 0]],
+            "west": [[0, 1]]
+        },
+        "id": "N3",
+        "large": true,
+        "map": "   XX   XXXXXXXX X 12 X  X XX X XX3XX4XX5XXXXXX6 XXXXXX ",
+        "size": [8, 7],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "X" },
+            { "id": 2, "large": false, "range": true, "trap": "X" },
+            { "id": 3, "large": true, "range": false, "trap": "\\" },
+            { "id": 4, "large": true, "range": false, "trap": "/" },
+            { "id": 5, "large": true, "range": false, "trap": "<" },
+            { "id": 6, "large": true, "range": false, "trap": ">" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[7, 1]],
+            "north": [[3, 0], [4, 0]],
+            "west": [[0, 1]]
+        },
+        "id": "N4",
+        "large": true,
+        "map": "   XX   #XXXXXX# X 12 X  X XX X XX3XX4XX5XX##XX6 XXXXXX ",
+        "size": [8, 7],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "" },
+            { "id": 2, "large": false, "range": true, "trap": "" },
+            { "id": 3, "large": true, "range": false, "trap": "" },
+            { "id": 4, "large": true, "range": false, "trap": "" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [],
+            "north": [[4, 0], [5, 0]],
+            "west": []
+        },
+        "id": "J1",
+        "large": true,
+        "map": "    XX    XX    XX1X2 3XX XXXX4X5 6X    XX    XX    XX",
+        "size": [6, 9],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "" },
+            { "id": 2, "large": false, "range": true, "trap": "" },
+            { "id": 3, "large": true, "range": true, "trap": "X" },
+            { "id": 4, "large": false, "range": false, "trap": "" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": true, "range": false, "trap": "X" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [],
+            "north": [[4, 0], [5, 0]],
+            "west": []
+        },
+        "id": "J2",
+        "large": true,
+        "map": "    XX    XX    XX1X2 3X# XXXX4X5 6X    XX    XX    XX",
+        "size": [6, 9],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "X" },
+            { "id": 2, "large": false, "range": false, "trap": "" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": false, "range": true, "trap": "X" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": true, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [],
+            "north": [[2,0]],
+            "west": [[0, 4], [0, 5]]
+        },
+        "id": "J3",
+        "large": true,
+        "map": "  X    XXX   1 2   X3X  XXXX4 X5XX6   XXXX  XXXX",
+        "size": [6, 8],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "^" },
+            { "id": 2, "large": false, "range": true, "trap": "^" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": false, "range": false, "trap": "!" },
+            { "id": 5, "large": true, "range": false, "trap": "<" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [],
+            "north": [[2,0]],
+            "west": [[0, 4], [0, 5]]
+        },
+        "id": "J4",
+        "large": true,
+        "map": "  #    XXX   1 2   X3X  XXXX4 #5XX6   XXXX  XXXX",
+        "size": [6, 8],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "X" },
+            { "id": 2, "large": false, "range": true, "trap": "" },
+            { "id": 3, "large": true, "range": true, "trap": "X" },
+            { "id": 4, "large": false, "range": false, "trap": "" },
+            { "id": 5, "large": true, "range": false, "trap": "!" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[5, 4], [5, 5]],
+            "north": [[3, 0]],
+            "west": []
+        },
+        "id": "J5",
+        "large": true,
+        "map": "   X    XXX   1 2   X3X  4XXXX 5XX6XXXXX  XXXX  ",
+        "size": [6, 8],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "^" },
+            { "id": 2, "large": false, "range": true, "trap": "^" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": false, "range": false, "trap": "!" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": true, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[5, 4], [5, 5]],
+            "north": [[3, 0]],
+            "west": []
+        },
+        "id": "J6",
+        "large": true,
+        "map": "   #    XXX   1 2   X3X  4XXXX 5XX6#XXXX  XXXX  ",
+        "size": [6, 8],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "X" },
+            { "id": 2, "large": false, "range": true, "trap": "X" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": false, "range": false, "trap": "!" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": true, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[10,1], [10,3]],
+            "north": [[1, 0], [9, 0]],
+            "west": [[0, 1], [0, 3]]
+        },
+        "id": "K1",
+        "large": true,
+        "map": " X 1   2 X XXXXX XXXXX X  XXX  X XX 3XXX4 XX XXXXXXXXX  XXXXXXXXX 5XXXXXXXXX6 X XXXXX X     XXX    ",
+        "size": [11, 9],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "" },
+            { "id": 2, "large": false, "range": true, "trap": "" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": true, "range": true, "trap": "" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[10,1], [10,3]],
+            "north": [[1, 0], [9, 0]],
+            "west": [[0, 1], [0, 3]]
+        },
+        "id": "K2",
+        "large": true,
+        "map": " X 1   2 X #XXXX XXXX# X  XXX  X XX 3XXX4 XX XXXXXXXXX  XXXXXXXXX 5XXXXXXXXX6 X XXXXX X     XXX    ",
+        "size": [11, 9],
+        "sp": [
+            { "id": 1, "large": false, "range": true, "trap": "" },
+            { "id": 2, "large": false, "range": true, "trap": "" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": true, "range": true, "trap": "" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[12,1], [12,3]],
+            "north": [[3, 0], [9, 0]],
+            "west": [[0, 1], [0, 3]]
+        },
+        "id": "K3",
+        "large": true,
+        "map": " X X     X X XXXXX1X2XXXXX X  XXXXX  X XX 3XXXXX4 XX X XXXXXXX X XXXXXXXXXXXXX 5  XXXXX  6      XXX     ",
+        "size": [13, 8],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "\\" },
+            { "id": 2, "large": true, "range": true, "trap": "/" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": true, "range": true, "trap": "" },
+            { "id": 5, "large": false, "range": false, "trap": "\\" },
+            { "id": 6, "large": false, "range": false, "trap": "//" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[12,1], [12,3]],
+            "north": [[3, 0], [9, 0]],
+            "west": [[0, 1], [0, 3]]
+        },
+        "id": "K4",
+        "large": true,
+        "map": " # X     X # XXXXX1X2XXXXX X  XXXXX  X XX 3XX#XX4 XX X XXX#XXX X XXXXXXXXXXXXX 5  XXXXX  6      XXX     ",
+        "size": [13, 8],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "X" },
+            { "id": 2, "large": true, "range": true, "trap": "X" },
+            { "id": 3, "large": true, "range": true, "trap": "" },
+            { "id": 4, "large": true, "range": true, "trap": "" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[8, 1], [8, 3]],
+            "north": [[2, 0], [6,0]],
+            "west": [[0, 1], [0, 3]]
+        },
+        "id": "L1",
+        "large": false,
+        "map": "  X   X  X1X   X2X X3X X4X XX X X XX X X X X 5XXXXXXX6X XXXXX XXXXXXXXXX",
+        "size": [9, 8],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "\\" },
+            { "id": 2, "large": true, "range": true, "trap": "/" },
+            { "id": 3, "large": false, "range": true, "trap": "\\" },
+            { "id": 4, "large": false, "range": true, "trap": "/" },
+            { "id": 5, "large": false, "range": false, "trap": "<" },
+            { "id": 6, "large": false, "range": false, "trap": ">" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[8, 1], [8, 3]],
+            "north": [[2, 0], [6,0]],
+            "west": [[0, 1], [0, 3]]
+        },
+        "id": "L2",
+        "large": false,
+        "map": "  X   X  #1X   X2# X3X X4X XX X X XX X X X X 5XXXXXXX6X XXXXX XXXXXXXXXX",
+        "size": [9, 8],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "/" },
+            { "id": 2, "large": true, "range": true, "trap": "\\" },
+            { "id": 3, "large": false, "range": true, "trap": "X" },
+            { "id": 4, "large": false, "range": true, "trap": "X" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[8, 2]],
+            "north": [[2, 0], [6, 0]],
+            "west": [[0, 2]]
+        },
+        "id": "L3",
+        "large": true,
+        "map": "  X X X   XXXXXXX XXX1X2XXX  X X X    X3X4X    XXXXX   5XXXXX6  X XXX X  X XXX X ",
+        "size": [9, 9],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "X" },
+            { "id": 2, "large": true, "range": true, "trap": "X" },
+            { "id": 3, "large": true, "range": true, "trap": "X" },
+            { "id": 4, "large": true, "range": true, "trap": "X" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
+    {
+        "exits": {
+            "east": [[8, 2]],
+            "north": [[2, 0], [6, 0]],
+            "west": [[0, 2]]
+        },
+        "id": "L4",
+        "large": true,
+        "map": "  X # X   XXXXXXX XXX1X2XXX  X X X    X3X4X    XXXXX   5XXXXX6  X XXX X  X XXX X ",
+        "size": [9, 9],
+        "sp": [
+            { "id": 1, "large": true, "range": true, "trap": "X" },
+            { "id": 2, "large": true, "range": true, "trap": "X" },
+            { "id": 3, "large": true, "range": true, "trap": "X" },
+            { "id": 4, "large": true, "range": true, "trap": "X" },
+            { "id": 5, "large": false, "range": false, "trap": "" },
+            { "id": 6, "large": false, "range": false, "trap": "" }
+        ]
+    },
 ]
     ;
 
