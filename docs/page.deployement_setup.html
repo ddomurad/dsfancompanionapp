@@ -1,0 +1,130 @@
+<!-- 
+MIT License
+
+Copyright (c) 2018 Daniel Domurad
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<ons-page id="depl_setup_page">
+    <ons-toolbar>
+        <div class="center">Deployment setup</div>
+        <div class="right">
+            <ons-toolbar-button icon="md-check" onclick="dsetup.accetDeployement();"></ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <ons-list>
+        <ons-list-header>Uncharted dungeon</ons-list-header>
+        <ons-list-item>
+            <p>
+                <ons-input modifier="underbar" placeholder="Card ID (e.g. a1)" float id="depl_setup_page-segment_id" value="a1"></ons-input>
+            </p>
+        </ons-list-item>
+
+        <ons-list-item>
+            <p style="text-align: left; display: inline">Exit direction:</p>
+            <div class="right">
+                <ons-select id="depl_setup_page-exit_direction">
+                    <option value="west">WEST</option>
+                    <option value="north">NORTH</option>
+                    <option value="east">EAST</option>
+                </ons-select>
+            </div>
+        </ons-list-item>
+
+        <ons-list-header>Deployment</ons-list-header>
+
+        <ons-list-item>
+            <p style="text-align: left; display: inline">Minions race:</p>
+            <div class="right">
+                <span id='depl_setup_page-minions_type_selector-placeholder'></span>
+            </div>
+        </ons-list-item>
+
+        <ons-list-item >
+            <div class="center">
+                <p id="depl_setup_page-dungeon_level">Dungeon level:&nbsp;6&nbsp;</p>
+            </div>
+            <div class="right">
+                <ons-range style="width: 100%;" value="28" id="depl_setup_page-dungeon_level_range"></ons-range>
+            </div>
+        </ons-list-item>
+
+        <ons-list-item >
+            <div class="center">
+                <p id="depl_setup_page-minions_count">Minions count:&nbsp;4&nbsp;</p>
+            </div>
+            <div class="right">
+                <ons-range style="width: 100%;" value="70" id="depl_setup_page-minions_count_range"></ons-range>
+            </div>
+        </ons-list-item>
+
+        <ons-list-item >
+            <div class="center">
+                <p id="depl_setup_page-max_level">Minions&nbsp;max level:&nbsp;15&nbsp;</p>
+            </div>
+            <div class="right">
+                <ons-range style="width: 100%;" value="100" id="depl_setup_page-max_level_range"></ons-range>
+            </div>
+        </ons-list-item>
+
+        <ons-list-header>Other</ons-list-header>
+        <ons-list-item>
+            <div class="center">
+                Deploy Traps
+            </div>
+            <div class="right">
+                <ons-switch id="depl_setup_page-traps"></ons-switch>
+            </div>
+        </ons-list-item>
+        <ons-list-item>
+            <div class="center">
+                Deploy Boss
+            </div>
+            <div class="right">
+                <ons-switch id="depl_setup_page-boss"></ons-switch>
+            </div>
+        </ons-list-item>
+        <ons-list-item>
+            <div class="center">
+                Large Models
+            </div>
+            <div class="right">
+                <ons-select id="depl_setup_page-large_models">
+                    <option value="map">According To Map</option>
+                    <option value="allow">Force Allow</option>
+                    <option value="disallow">Force Disallow</option>
+                </ons-select>
+            </div>
+        </ons-list-item>
+
+        <!-- <ons-list-item>
+                <div class="center" >
+                    Minion Randomization
+                </div>
+                <div class="right">
+                    <ons-select id="depl_setup_page-randomization">
+                        <option value="type_random">All types</option>
+                        <option value="full_random">All models</option>
+                    </ons-select>
+                </div>
+            </ons-list-item> -->
+    </ons-list>
+
+</ons-page>
