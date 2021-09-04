@@ -1,0 +1,108 @@
+<!-- 
+MIT License
+
+Copyright (c) 2018 Daniel Domurad
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+
+<ons-page id="minions_setup-page">
+    <ons-toolbar>
+        <div class="center">Minions Collection Setup</div>
+
+        <div class="right">
+            <ons-toolbar-button icon="fa-plus" id="minions_setup-add_btn" onclick="ms.showMinionsSetupActions()"></ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <div id="minions_setup-list">
+    </div>
+
+    <ons-popover id="minions_setup-popover" cancelable direction="down" cover-target target="#minions_setup-add_btn">
+        <ons-list>
+            <ons-list-item tappable onclick="gl.hideDialog('#minions_setup-popover'); ms.showAddMinionsTypeDialog();">
+                <div class="center">Add Minions Race</div>
+            </ons-list-item>
+            <ons-list-item class="more-options" tappable onclick="gl.hideDialog('#minions_setup-popover'); ms.showAddMinionDialog();">
+                <div class="center">Add Minion</div>
+            </ons-list-item>
+        </ons-list>
+    </ons-popover>
+
+
+    <ons-dialog id="minions_setup-add_minion_dialog" class="minions_edit_dialog">
+        <ons-page>
+            <ons-toolbar>
+                <div class="center">Add minion</div>
+            </ons-toolbar>
+
+            <span hidden id="minions_setup-add_minion_dialog-hidden_edit_type"></span>
+            <span hidden id="minions_setup-add_minion_dialog-hidden_edit_name"></span>
+
+            <ons-list>
+                <ons-list-item>
+                    <p style="text-align: left; display: inline">Race: </p>
+                    <div class="right">
+                        <div id='minions_setup-add_minion_dialog-select-type-placeholder' style=" display: inline"></div>
+                    </div>
+                </ons-list-item>
+                <ons-list-item>
+                    <p>
+                        <ons-input id="minions_setup-add_minion_dialog-minion_name" modifier="underbar" placeholder="Minion name" float></ons-input>
+                    </p>
+                </ons-list-item>
+                <ons-list-item>
+                    <div class="center">
+                        Range attack
+                    </div>
+                    <div class="right">
+                        <ons-switch id="minions_setup-add_minion_dialog-range_attack"></ons-switch>
+                    </div>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <div class="center">
+                        Large model
+                    </div>
+                    <div class="right">
+                        <ons-switch id="minions_setup-add_minion_dialog-large_model"></ons-switch>
+                    </div>
+                </ons-list-item>
+                <ons-list-item>
+                    <p>
+                        <ons-input type="number" min="0" max="15" id="minions_setup-add_minion_dialog-minion_level" modifier="underbar" placeholder="Minion's level"
+                            float></ons-input>
+                    </p>
+                    &nbsp; &nbsp;
+                    <p>
+                        <ons-input type="number" min="0" max="15" id="minions_setup-add_minion_dialog-models_count" modifier="underbar" placeholder="Models count"
+                            float></ons-input>
+                    </p>
+                </ons-list-item>
+
+                <ons-list-item>
+                    <p class="right">
+                        <ons-button modifier="light" onclick="ms.addMinionFromDialog(); gl.hideDialog('#minions_setup-add_minion_dialog');">Save</ons-button>
+                        <ons-button modifier="light" onclick="gl.hideDialog('#minions_setup-add_minion_dialog');">Cancel</ons-button>
+                    </p>
+                </ons-list-item>
+            </ons-list>
+        </ons-page>
+    </ons-dialog>
+</ons-page>

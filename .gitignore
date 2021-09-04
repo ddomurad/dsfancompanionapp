@@ -1,3 +1,7 @@
 node_modules
-platforms
 plugins
+platforms/android
+platforms/browser/cordova
+platforms/browser/platform_www
+platforms/browser/browser.json
+platforms/browser/config.xml

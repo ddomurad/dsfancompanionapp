@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "DS Fan Companion",
+  "short_name": "DS Comp",
+  "version": "domurad.daniel.dsfancompanion",
+  "description": "Simple fanmade companion application for Dungeon Saga board game.",
+  "author": "Daniel Domurad",
+  "icons": [
+    {
+      "src": "/res/icon/android/icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "orientation": "portrait",
+  "start_url": "index.html"
+}

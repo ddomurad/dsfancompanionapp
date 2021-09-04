@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="domurad.daniel.dsfancompanion" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name short="DS Comp">DS Fan Companion</name>
+    <description>
+        Simple fanmade companion application for Dungeon Saga board game.
+    </description>
+    <author email="ddomurad@gmail.com" href="">
+        Daniel Domurad
+    </author>
+    <content src="index.html" />
+    <icon src="/res/icon/android/icon.png" />
+    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-targetSdkVersion" value="19" />
+    <preference name="FullScreen" value="false" />
+    <preference name="KeepRunning" value="false" />
+    <preference name="orientation" value="portrait" />
+</widget>
